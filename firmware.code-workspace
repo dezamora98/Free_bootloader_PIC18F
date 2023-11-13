@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"xc.h": "c",
+			"*.hex": "hex",
+			"*.c": "c",
+			"pic18.h": "c",
+			"pic.h": "c",
+			"htc.h": "c",
+			"builtins.h": "c",
+			"trace18.h": "c",
+			"usb_device.h": "c",
+			"usb_device_local.h": "c",
+			"usb_ch9.h": "c",
+			"usb_device_hid.h": "c",
+			"system.h": "c",
+			"memory.h": "c"
+		}
+	}
+}

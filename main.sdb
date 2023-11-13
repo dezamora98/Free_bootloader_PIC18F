@@ -1,0 +1,149 @@
+[p GLOBOPT AUTOSTATIC LFSROK ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"89 G:\DOCUMENTS\UNIVERSIDAD\CURSOS_AUTOMATICA\TESIS\TESIS-DANIEL\pro\firmware\firmware_3\F_VSCODE\main.c
+[e E3311 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"62 D:\ProgramFiles\Microchip\xc8\v2.32\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\ProgramFiles\Microchip\xc8\v2.32\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\ProgramFiles\Microchip\xc8\v2.32\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 D:\ProgramFiles\Microchip\xc8\v2.32\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"19 D:\ProgramFiles\Microchip\xc8\v2.32\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 D:\ProgramFiles\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 D:\ProgramFiles\Microchip\xc8\v2.32\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 D:\ProgramFiles\Microchip\xc8\v2.32\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\ProgramFiles\Microchip\xc8\v2.32\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\ProgramFiles\Microchip\xc8\v2.32\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"63 G:\DOCUMENTS\UNIVERSIDAD\CURSOS_AUTOMATICA\TESIS\TESIS-DANIEL\pro\firmware\firmware_3\F_VSCODE\main.c
+[v _main main `(v  1 e 1 0 ]
+"100
+[v _init_APP init_APP `(v  1 e 1 0 ]
+"112
+[v _boot boot `T(v  1 e 1 0 ]
+"151
+[v _Write_event Write_event `T(v  1 e 1 0 ]
+"192
+[v _Read_event Read_event `T(v  1 e 1 0 ]
+[s S138 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"665 D:\ProgramFiles\Microchip\xc8\v2.32\pic\include\proc\pic18f4550.h
+[u S146 . 1 `S138 1 . 1 0 ]
+[v _UCONbits UCONbits `VES146  1 e 1 @3949 ]
+"2454
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"3074
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+[s S30 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3101
+[s S39 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S48 . 1 `S30 1 . 1 0 `S39 1 . 1 0 ]
+[v _LATBbits LATBbits `VES48  1 e 1 @3978 ]
+"3626
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"8070
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S75 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8615
+[s S84 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S93 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S97 . 1 `S75 1 . 1 0 `S84 1 . 1 0 `S93 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES97  1 e 1 @4082 ]
+"51 G:\DOCUMENTS\UNIVERSIDAD\CURSOS_AUTOMATICA\TESIS\TESIS-DANIEL\pro\firmware\firmware_3\F_VSCODE\system/system.h
+[v _ReceivedDataBuffer ReceivedDataBuffer `[0]uc  1 e 0 @1280 ]
+"59
+[v _USBOutHandle USBOutHandle `*.39VEv  1 e 2 0 ]
+"65
+[v _SYS_state SYS_state `uc  1 e 1 @0 ]
+"66
+[v _PT0_BOOT PT0_BOOT `uc  1 e 1 @1 ]
+"2050 G:\DOCUMENTS\UNIVERSIDAD\CURSOS_AUTOMATICA\TESIS\TESIS-DANIEL\pro\firmware\firmware_3\F_VSCODE\system/usb_device.h
+[v _USBDeviceState USBDeviceState `E3311  1 e 1 0 ]
+"63 G:\DOCUMENTS\UNIVERSIDAD\CURSOS_AUTOMATICA\TESIS\TESIS-DANIEL\pro\firmware\firmware_3\F_VSCODE\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"98
+} 0
+"100
+[v _init_APP init_APP `(v  1 e 1 0 ]
+{
+"110
+} 0
+"112
+[v _boot boot `T(v  1 e 1 0 ]
+{
+"149
+} 0
+"151
+[v _Write_event Write_event `T(v  1 e 1 0 ]
+{
+"153
+[v Write_event@i i `uc  1 a 1 1 ]
+"190
+} 0
+"192
+[v _Read_event Read_event `T(v  1 e 1 0 ]
+{
+"226
+} 0

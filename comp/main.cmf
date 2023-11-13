@@ -1,0 +1,1505 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$comp\startup.o
+idloc IDLOC 5 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 E 1
+$comp\main.o
+cinit CODE 0 7EFC 7EFC 40 1
+idloc IDLOC 5 200000 200000 8 1
+text0 CODE 0 77E2 77E2 9A 1
+text1 CODE 0 69E4 69E4 1A 1
+text2 CODE 0 68F0 68F0 10 1
+text3 CODE 0 7C72 7C72 7E 1
+text4 CODE 0 7730 7730 B2 1
+text5 CODE 0 7B5A 7B5A 8C 1
+text6 CODE 0 7A3E 7A3E 8E 1
+text7 CODE 0 7CF0 7CF0 76 1
+text8 CODE 0 68E0 68E0 10 1
+text9 CODE 0 68D6 68D6 A 1
+text10 CODE 0 7DC2 7DC2 5A 1
+text11 CODE 0 68CC 68CC A 1
+text13 CODE 0 6C70 6C70 13E 1
+text14 CODE 0 7F74 7F74 32 1
+text15 CODE 0 7FA6 7FA6 2C 1
+text16 CODE 0 7EBA 7EBA 42 1
+text17 CODE 0 69C4 69C4 20 1
+text18 CODE 0 6DAE 6DAE 11A 1
+text19 CODE 0 787C 787C 96 1
+text20 CODE 0 7E76 7E76 44 1
+text21 CODE 0 7ACC 7ACC 8E 1
+text22 CODE 0 71BC 71BC DE 1
+text23 CODE 0 7912 7912 96 1
+text24 CODE 0 75B8 75B8 BC 1
+text25 CODE 0 7432 7432 C4 1
+text26 CODE 0 7FD2 7FD2 2C 1
+text27 CODE 0 79A8 79A8 96 1
+text28 CODE 0 6FD0 6FD0 106 1
+text29 CODE 0 6A52 6A52 21E 1
+text30 CODE 0 7E1C 7E1C 5A 1
+text31 CODE 0 70D6 70D6 E6 1
+text32 CODE 0 7F3C 7F3C 38 1
+text33 CODE 0 7BE6 7BE6 8C 1
+text34 CODE 0 729A 729A D2 1
+text35 CODE 0 7D66 7D66 5C 1
+text36 CODE 0 6EC8 6EC8 108 1
+text37 CODE 0 74F6 74F6 C2 1
+text38 CODE 0 7674 7674 BC 1
+text39 CODE 0 736C 736C C6 1
+cstackCOMRAM COMRAM 1 3A 3A 23 1
+bssBANK0 BANK0 1 60 60 4 1
+smallconst SMALLCONST 0 6900 6900 C4 1
+idataBANK0 CODE 0 68C8 68C8 4 1
+dataBANK0 BANK0 1 64 64 4 1
+_HID_transf_text CODE 0 69FE 69FE 54 1
+bssCOMRAM COMRAM 1 3 3 37 1
+config CONFIG 4 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 68-3FF 1
+RAM 430-7FF 1
+SFR F60-FFF 1
+BANK0 68-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 430-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 6840-68C7 1
+CONST 7FFE-7FFF 1
+STACK 430-7FF 1
+SMALLCONST 6840-68C7 1
+SMALLCONST 7FFE-7FFF 1
+CODE 6840-68C7 1
+CODE 7FFE-7FFF 1
+BIGRAM 1-1 1
+BIGRAM 5D-5F 1
+BIGRAM 68-3FF 1
+BIGRAM 430-7FF 1
+COMRAM 1-1 1
+COMRAM 5D-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 6840-68C7 1
+MEDIUMCONST 7FFE-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$comp\startup.o
+0 init CODE >88:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\startup.s
+$comp\main.o
+736C text39 CODE >1775:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+736C text39 CODE >1781:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7370 text39 CODE >1782:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+737C text39 CODE >1784:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7380 text39 CODE >1791:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7386 text39 CODE >1793:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+738A text39 CODE >1795:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7390 text39 CODE >1797:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7394 text39 CODE >1803:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+739C text39 CODE >1808:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+73AC text39 CODE >1812:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+73B4 text39 CODE >1813:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+73BA text39 CODE >1817:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+73EC text39 CODE >1818:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+73EE text39 CODE >1815:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+73F6 text39 CODE >1825:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7428 text39 CODE >1826:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+742A text39 CODE >1823:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7674 text38 CODE >2599:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7674 text38 CODE >2603:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7684 text38 CODE >2606:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+768E text38 CODE >2611:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7696 text38 CODE >2613:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+769E text38 CODE >2614:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76A4 text38 CODE >2616:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76A8 text38 CODE >2620:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76AC text38 CODE >2625:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76B2 text38 CODE >2627:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76C6 text38 CODE >2628:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76CA text38 CODE >2634:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76D2 text38 CODE >2638:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76DE text38 CODE >2639:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76EA text38 CODE >2640:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76EC text38 CODE >2643:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76F2 text38 CODE >2645:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+76FE text38 CODE >2646:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+770A text38 CODE >2647:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+770C text38 CODE >2650:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7718 text38 CODE >2651:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7726 text38 CODE >2655:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7726 text38 CODE >2660:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7728 text38 CODE >2666:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+772A text38 CODE >2669:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+772E text38 CODE >2674:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74F6 text37 CODE >1420:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74F6 text37 CODE >1427:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74FC text37 CODE >1429:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7500 text37 CODE >1430:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7506 text37 CODE >1432:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+750A text37 CODE >1436:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7512 text37 CODE >1438:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7522 text37 CODE >1439:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+752E text37 CODE >1440:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+753A text37 CODE >1441:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+753C text37 CODE >1442:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7542 text37 CODE >1444:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7546 text37 CODE >1449:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7556 text37 CODE >1450:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+756A text37 CODE >1451:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7576 text37 CODE >1452:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7582 text37 CODE >1453:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7586 text37 CODE >1457:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7596 text37 CODE >1458:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75AA text37 CODE >1459:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EC8 text36 CODE >1856:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EC8 text36 CODE >1863:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6ED8 text36 CODE >1869:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EE2 text36 CODE >1871:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EE6 text36 CODE >1874:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EEE text36 CODE >1878:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EF4 text36 CODE >1880:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F10 text36 CODE >1878:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F1A text36 CODE >1885:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F22 text36 CODE >1887:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F32 text36 CODE >1888:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F46 text36 CODE >1889:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F52 text36 CODE >1891:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F5E text36 CODE >1892:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F6A text36 CODE >1893:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F6C text36 CODE >1896:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F78 text36 CODE >1897:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F86 text36 CODE >1905:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6F96 text36 CODE >1906:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FAA text36 CODE >1910:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FB6 text36 CODE >1911:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FC2 text36 CODE >1931:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FC4 text36 CODE >1945:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FCA text36 CODE >1947:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FCE text36 CODE >1951:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7D66 text35 CODE >2545:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7D66 text35 CODE >2547:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7D6E text35 CODE >2549:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7D72 text35 CODE >2550:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7D74 text35 CODE >2555:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7D78 text35 CODE >2562:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7D7E text35 CODE >2564:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7D8E text35 CODE >2565:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7DA2 text35 CODE >2566:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7DAE text35 CODE >2567:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7DBA text35 CODE >2568:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7DBC text35 CODE >2571:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7DC0 text35 CODE >2574:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+729A text34 CODE >161:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+729A text34 CODE >163:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+72A6 text34 CODE >164:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+72AC text34 CODE >171:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+72B6 text34 CODE >176:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+72BC text34 CODE >178:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+72D6 text34 CODE >187:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+72EA text34 CODE >173:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+72EE text34 CODE >173:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+72F4 text34 CODE >173:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+72FA text34 CODE >209:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7308 text34 CODE >227:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+731A text34 CODE >231:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+731C text34 CODE >233:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7320 text34 CODE >234:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7324 text34 CODE >236:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7326 text34 CODE >238:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7338 text34 CODE >242:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+733A text34 CODE >244:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+733E text34 CODE >245:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7342 text34 CODE >246:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7344 text34 CODE >214:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7348 text34 CODE >214:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+734E text34 CODE >214:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7354 text34 CODE >214:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+735A text34 CODE >214:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7360 text34 CODE >214:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7366 text34 CODE >214:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+7BE6 text33 CODE >1547:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7BE8 text33 CODE >1553:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7BF0 text33 CODE >1554:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7C2A text33 CODE >1556:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7C34 text33 CODE >1561:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7C3A text33 CODE >1563:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7C44 text33 CODE >1567:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7C58 text33 CODE >1571:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7C62 text33 CODE >1572:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7C70 text33 CODE >1589:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F3C text32 CODE >882:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F3E text32 CODE >888:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F42 text32 CODE >890:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F4C text32 CODE >892:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F50 text32 CODE >894:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F5A text32 CODE >903:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F66 text32 CODE >905:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F72 text32 CODE >906:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+70D6 text31 CODE >999:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+70D8 text31 CODE >1004:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+70DE text31 CODE >1007:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+70E8 text31 CODE >1012:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+70FC text31 CODE >1017:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7104 text31 CODE >1019:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+710E text31 CODE >1033:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7122 text31 CODE >1034:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7132 text31 CODE >1035:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+713E text31 CODE >1036:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+714A text31 CODE >1037:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7156 text31 CODE >1040:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+715C text31 CODE >1043:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7182 text31 CODE >1048:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71B2 text31 CODE >1050:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71BA text31 CODE >1051:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7E1C text30 CODE >25:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E1C text30 CODE >27:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E1E text30 CODE >31:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E26 text30 CODE >33:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E30 text30 CODE >35:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E4E text30 CODE >36:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E50 text30 CODE >41:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E54 text30 CODE >42:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E56 text30 CODE >27:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E62 text30 CODE >27:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E6A text30 CODE >27:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+7E70 text30 CODE >27:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+6A52 text29 CODE >2761:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6A52 text29 CODE >2773:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6A64 text29 CODE >2775:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6A66 text29 CODE >2776:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6A6E text29 CODE >2777:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6A72 text29 CODE >2779:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6A76 text29 CODE >2780:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6A76 text29 CODE >2786:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6AA4 text29 CODE >2790:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6AA6 text29 CODE >2793:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6AAA text29 CODE >2795:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6AC0 text29 CODE >2796:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6ACC text29 CODE >2800:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6AE2 text29 CODE >2801:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6AF4 text29 CODE >2808:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6AF8 text29 CODE >2810:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B04 text29 CODE >2814:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B0E text29 CODE >2820:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B12 text29 CODE >2822:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B1E text29 CODE >2826:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B34 text29 CODE >2830:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B3C text29 CODE >2832:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B48 text29 CODE >2836:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B4C text29 CODE >2838:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B58 text29 CODE >2842:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B68 text29 CODE >2844:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B68 text29 CODE >2847:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B74 text29 CODE >2848:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B80 text29 CODE >2849:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B82 text29 CODE >2855:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B8C text29 CODE >2857:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6B98 text29 CODE >2861:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6BA4 text29 CODE >2862:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6BB0 text29 CODE >2863:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6BCC text29 CODE >2864:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6BCE text29 CODE >2868:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6BDA text29 CODE >2873:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6BE4 text29 CODE >2879:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6BF4 text29 CODE >2881:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6BFA text29 CODE >2883:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C06 text29 CODE >2887:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C16 text29 CODE >2890:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C22 text29 CODE >2893:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C3E text29 CODE >2894:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C40 text29 CODE >2898:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C4C text29 CODE >2946:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C62 text29 CODE >2950:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C6E text29 CODE >2953:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FD0 text28 CODE >2047:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FD0 text28 CODE >2049:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FDA text28 CODE >2051:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FDE text28 CODE >2053:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FE0 text28 CODE >2059:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FEC text28 CODE >2061:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FF4 text28 CODE >2062:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FF6 text28 CODE >2067:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6FFC text28 CODE >2072:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7014 text28 CODE >2078:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7042 text28 CODE >2079:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7070 text28 CODE >2080:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7072 text28 CODE >2083:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7078 text28 CODE >2090:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+707E text28 CODE >2093:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7096 text28 CODE >2095:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+70BE text28 CODE >2096:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+70C0 text28 CODE >2053:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+70C4 text28 CODE >2053:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+70CA text28 CODE >2053:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+70D0 text28 CODE >2053:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79A8 text27 CODE >2133:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79A8 text27 CODE >2135:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79AE text27 CODE >2136:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79B2 text27 CODE >2138:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79B4 text27 CODE >2140:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79B4 text27 CODE >2141:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79B6 text27 CODE >2151:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79BC text27 CODE >2153:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79C0 text27 CODE >2156:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79C0 text27 CODE >2157:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79C2 text27 CODE >2158:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79C4 text27 CODE >2159:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79C4 text27 CODE >2160:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79C6 text27 CODE >2164:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79D0 text27 CODE >2168:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79D4 text27 CODE >2170:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79E0 text27 CODE >2174:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79F6 text27 CODE >2177:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A0E text27 CODE >2179:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A14 text27 CODE >2138:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A1A text27 CODE >2138:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A20 text27 CODE >2138:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A26 text27 CODE >2138:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A2A text27 CODE >2183:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A2A text27 CODE >2185:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A2E text27 CODE >2187:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A36 text27 CODE >2188:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A38 text27 CODE >2189:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7A3C text27 CODE >2191:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FD2 text26 CODE >8:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memset.c
+7FD2 text26 CODE >18:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memset.c
+7FDA text26 CODE >19:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memset.c
+7FDC text26 CODE >20:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memset.c
+7FEC text26 CODE >19:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memset.c
+7432 text25 CODE >1972:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7432 text25 CODE >1977:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7434 text25 CODE >1980:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7450 text25 CODE >1983:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+746C text25 CODE >1986:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+746E text25 CODE >1991:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7472 text25 CODE >1993:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+747E text25 CODE >1994:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+748A text25 CODE >1991:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7492 text25 CODE >1998:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74AC text25 CODE >2001:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74AE text25 CODE >2003:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74B6 text25 CODE >2006:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74BE text25 CODE >2007:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74C6 text25 CODE >2010:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74CA text25 CODE >2013:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74D0 text25 CODE >2016:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74D4 text25 CODE >2017:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74D6 text25 CODE >2021:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74F0 text25 CODE >2026:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+74F4 text25 CODE >2028:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75B8 text24 CODE >2693:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75B8 text24 CODE >2695:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75C8 text24 CODE >2699:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75C8 text24 CODE >2700:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75CA text24 CODE >2701:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75CE text24 CODE >2703:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75D0 text24 CODE >2705:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75D4 text24 CODE >2706:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75D6 text24 CODE >2708:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75DA text24 CODE >2709:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75DC text24 CODE >2711:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75E2 text24 CODE >2712:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75E4 text24 CODE >2713:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75E8 text24 CODE >2714:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75EA text24 CODE >2715:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75EC text24 CODE >2717:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75F0 text24 CODE >2718:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75F2 text24 CODE >2721:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75F6 text24 CODE >2722:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+75F8 text24 CODE >2724:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7604 text24 CODE >2729:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7604 text24 CODE >2730:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7606 text24 CODE >2731:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7612 text24 CODE >2732:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7614 text24 CODE >2734:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7630 text24 CODE >2735:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7632 text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7636 text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+763C text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7642 text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7648 text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+764E text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7654 text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+765A text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7660 text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7666 text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+766C text24 CODE >2697:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7912 text23 CODE >1492:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7912 text23 CODE >1494:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7916 text23 CODE >1495:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+791A text23 CODE >1497:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7922 text23 CODE >1500:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7932 text23 CODE >1501:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7946 text23 CODE >1502:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7952 text23 CODE >1503:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+795E text23 CODE >1504:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7960 text23 CODE >1509:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+796E text23 CODE >1511:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7976 text23 CODE >1513:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+797A text23 CODE >1518:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+798E text23 CODE >1519:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+799A text23 CODE >1520:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+79A6 text23 CODE >1522:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71BC text22 CODE >1620:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71BC text22 CODE >1626:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71BE text22 CODE >1632:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71C2 text22 CODE >1634:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71C6 text22 CODE >1636:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71CA text22 CODE >1647:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71CE text22 CODE >1649:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71D2 text22 CODE >1654:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71D6 text22 CODE >1655:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71DA text22 CODE >1656:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71DC text22 CODE >1663:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+71EC text22 CODE >1664:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7200 text22 CODE >1665:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+720C text22 CODE >1666:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7218 text22 CODE >1667:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7224 text22 CODE >1668:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7232 text22 CODE >1671:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7232 text22 CODE >1673:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7238 text22 CODE >1675:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+723C text22 CODE >1689:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7240 text22 CODE >1691:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7244 text22 CODE >1714:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7248 text22 CODE >1715:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+724C text22 CODE >1716:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7252 text22 CODE >1718:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7258 text22 CODE >1733:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+725C text22 CODE >1736:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+726C text22 CODE >1737:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7280 text22 CODE >1738:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+728C text22 CODE >1739:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7ACC text21 CODE >2472:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7ACC text21 CODE >2477:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7AD0 text21 CODE >2478:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7AD4 text21 CODE >2479:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7AD8 text21 CODE >2480:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7ADC text21 CODE >2481:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7AE0 text21 CODE >2482:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7AE4 text21 CODE >2491:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7AF0 text21 CODE >2493:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7AFA text21 CODE >2494:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7B06 text21 CODE >2495:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7B10 text21 CODE >2496:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7B1C text21 CODE >2498:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7B20 text21 CODE >2499:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7B28 text21 CODE >2500:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7B2C text21 CODE >2501:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7B34 text21 CODE >2507:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7B38 text21 CODE >2508:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7B54 text21 CODE >2521:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7B58 text21 CODE >2522:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7E76 text20 CODE >27:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memcpy.c
+7E76 text20 CODE >34:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memcpy.c
+7E7E text20 CODE >35:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memcpy.c
+7E86 text20 CODE >36:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memcpy.c
+7E88 text20 CODE >37:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memcpy.c
+7E98 text20 CODE >38:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memcpy.c
+7EA8 text20 CODE >36:D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memcpy.c
+787C text19 CODE >2379:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+787C text19 CODE >2385:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7880 text19 CODE >2389:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+788C text19 CODE >2393:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+78A8 text19 CODE >2401:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+78B0 text19 CODE >2403:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+78BA text19 CODE >2406:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+78CE text19 CODE >2412:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+78F6 text19 CODE >2415:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+78FA text19 CODE >2416:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+78FC text19 CODE >2420:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7902 text19 CODE >2423:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+790C text19 CODE >2427:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7910 text19 CODE >2430:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DAE text18 CODE >281:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DAE text18 CODE >285:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DB0 text18 CODE >292:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DB4 text18 CODE >295:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DB8 text18 CODE >298:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DBC text18 CODE >300:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DD8 text18 CODE >302:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DE4 text18 CODE >311:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DE8 text18 CODE >313:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E00 text18 CODE >311:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E08 text18 CODE >317:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E0A text18 CODE >320:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E0E text18 CODE >323:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E10 text18 CODE >326:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E12 text18 CODE >331:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E14 text18 CODE >333:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E18 text18 CODE >334:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E1C text18 CODE >335:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E24 text18 CODE >336:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E28 text18 CODE >340:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E2C text18 CODE >341:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E30 text18 CODE >343:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E34 text18 CODE >344:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E38 text18 CODE >345:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E3C text18 CODE >349:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E40 text18 CODE >351:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E54 text18 CODE >352:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E68 text18 CODE >353:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E74 text18 CODE >354:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E80 text18 CODE >349:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E88 text18 CODE >358:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E90 text18 CODE >360:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E94 text18 CODE >362:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6E9E text18 CODE >363:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EA2 text18 CODE >364:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EA6 text18 CODE >365:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EA8 text18 CODE >368:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EAC text18 CODE >370:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EBE text18 CODE >371:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EC2 text18 CODE >374:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6EC6 text18 CODE >375:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+69C4 text17 CODE >2998:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+69C4 text17 CODE >3006:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+69D2 text17 CODE >3007:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+69D8 text17 CODE >3009:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+69DA text17 CODE >3011:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+69E0 text17 CODE >3013:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+69E2 text17 CODE >3016:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7EBA text16 CODE >2209:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7EBA text16 CODE >2221:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7EBE text16 CODE >2224:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7EDE text16 CODE >2227:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7EEA text16 CODE >2228:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7EF6 text16 CODE >2230:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7EF8 text16 CODE >2231:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7EF8 text16 CODE >2233:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7EFA text16 CODE >2234:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FA6 text15 CODE >2252:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FA6 text15 CODE >2277:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FA8 text15 CODE >2278:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FAA text15 CODE >2281:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FAC text15 CODE >2284:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FB0 text15 CODE >2285:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FB4 text15 CODE >2292:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FD0 text15 CODE >2293:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F74 text14 CODE >2310:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F74 text14 CODE >2312:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F78 text14 CODE >2318:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F94 text14 CODE >2325:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F96 text14 CODE >2330:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F98 text14 CODE >2348:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F9A text14 CODE >2351:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7F9C text14 CODE >2348:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FA0 text14 CODE >2354:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+7FA4 text14 CODE >2356:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C70 text13 CODE >481:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C70 text13 CODE >570:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C76 text13 CODE >573:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C7A text13 CODE >576:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C7E text13 CODE >580:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C8A text13 CODE >583:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C92 text13 CODE >586:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C96 text13 CODE >594:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C9A text13 CODE >605:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6C9E text13 CODE >612:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CA2 text13 CODE >616:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CA6 text13 CODE >618:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CA8 text13 CODE >619:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CAA text13 CODE >620:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CAE text13 CODE >638:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CB4 text13 CODE >640:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CB6 text13 CODE >644:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CBA text13 CODE >651:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CBE text13 CODE >653:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CC0 text13 CODE >654:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CC2 text13 CODE >655:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CC2 text13 CODE >667:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CC8 text13 CODE >669:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CCC text13 CODE >675:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CD0 text13 CODE >685:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CD2 text13 CODE >691:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CD8 text13 CODE >698:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CDC text13 CODE >712:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CE0 text13 CODE >715:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6CE4 text13 CODE >717:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D00 text13 CODE >719:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D02 text13 CODE >722:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D06 text13 CODE >739:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D0A text13 CODE >741:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D0C text13 CODE >748:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D10 text13 CODE >750:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D14 text13 CODE >755:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D1A text13 CODE >757:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D1E text13 CODE >760:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D24 text13 CODE >762:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D3E text13 CODE >763:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D42 text13 CODE >778:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D48 text13 CODE >780:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D4A text13 CODE >781:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D4C text13 CODE >782:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D4C text13 CODE >787:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D50 text13 CODE >789:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D54 text13 CODE >790:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D54 text13 CODE >791:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D58 text13 CODE >794:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D5C text13 CODE >795:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D66 text13 CODE >797:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D68 text13 CODE >802:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D6C text13 CODE >804:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D72 text13 CODE >808:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D7C text13 CODE >814:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D82 text13 CODE >816:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D86 text13 CODE >817:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6D88 text13 CODE >820:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DA2 text13 CODE >789:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DAA text13 CODE >830:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+6DAC text13 CODE >831:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+69FE _HID_transf_text CODE >18:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+69FE _HID_transf_text CODE >20:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+69FE _HID_transf_text CODE >22:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+6A02 _HID_transf_text CODE >23:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+6A0C _HID_transf_text CODE >26:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+6A12 _HID_transf_text CODE >28:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+6A30 _HID_transf_text CODE >29:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+6A32 _HID_transf_text CODE >32:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+6A50 _HID_transf_text CODE >34:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68CC text11 CODE >11:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68CC text11 CODE >13:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68D0 text11 CODE >14:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68D4 text11 CODE >16:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+7DC2 text10 CODE >114:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7DC2 text10 CODE >117:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7DEC text10 CODE >119:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7DF0 text10 CODE >120:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7DF4 text10 CODE >122:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7DFA text10 CODE >123:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7DFA text10 CODE >124:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7DFC text10 CODE >125:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7E0C text10 CODE >122:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+68D6 text9 CODE >5:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68D6 text9 CODE >7:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68DA text9 CODE >8:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68DE text9 CODE >10:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68E0 text8 CODE >44:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68E2 text8 CODE >46:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68E6 text8 CODE >47:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68EA text8 CODE >48:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68EE text8 CODE >49:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+7CF0 text7 CODE >192:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CF0 text7 CODE >195:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CFA text7 CODE >197:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CFE text7 CODE >198:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D00 text7 CODE >200:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D02 text7 CODE >202:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D06 text7 CODE >203:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D08 text7 CODE >206:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D0C text7 CODE >207:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D16 text7 CODE >208:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D26 text7 CODE >209:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D28 text7 CODE >212:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D2C text7 CODE >213:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D36 text7 CODE >214:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D38 text7 CODE >203:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D40 text7 CODE >203:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D46 text7 CODE >203:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D4A text7 CODE >218:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D4A text7 CODE >220:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D50 text7 CODE >221:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D56 text7 CODE >200:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D5E text7 CODE >224:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D62 text7 CODE >225:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7D64 text7 CODE >226:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7A3E text6 CODE >3:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7A3E text6 CODE >6:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7A5E text6 CODE >8:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7A80 text6 CODE >12:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7A84 text6 CODE >13:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7A88 text6 CODE >17:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7A8C text6 CODE >18:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7A90 text6 CODE >19:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7A94 text6 CODE >22:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7A98 text6 CODE >24:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7AA8 text6 CODE >25:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7AAA text6 CODE >22:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7AB2 text6 CODE >30:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7AB4 text6 CODE >33:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7AB8 text6 CODE >34:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7ABC text6 CODE >35:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7AC0 text6 CODE >36:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7AC2 text6 CODE >37:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7AC6 text6 CODE >38:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7AC8 text6 CODE >41:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7ACA text6 CODE >42:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7B5A text5 CODE >151:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B5A text5 CODE >154:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B64 text5 CODE >156:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B68 text5 CODE >157:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B6C text5 CODE >159:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B6E text5 CODE >161:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B72 text5 CODE >162:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B74 text5 CODE >165:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B7A text5 CODE >166:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B84 text5 CODE >167:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B94 text5 CODE >168:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B96 text5 CODE >171:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7B9A text5 CODE >172:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BA4 text5 CODE >173:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BA6 text5 CODE >176:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BB0 text5 CODE >179:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BB6 text5 CODE >162:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BBE text5 CODE >162:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BC4 text5 CODE >162:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BCA text5 CODE >182:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BCA text5 CODE >184:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BD0 text5 CODE >185:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BD6 text5 CODE >159:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BDE text5 CODE >188:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BE2 text5 CODE >189:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7BE4 text5 CODE >190:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7730 text4 CODE >65:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7730 text4 CODE >68:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7740 text4 CODE >70:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7748 text4 CODE >72:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+774C text4 CODE >73:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7756 text4 CODE >74:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7758 text4 CODE >75:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+775A text4 CODE >76:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+775C text4 CODE >77:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+775E text4 CODE >79:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7762 text4 CODE >80:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7766 text4 CODE >82:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7768 text4 CODE >83:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+776C text4 CODE >84:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+776E text4 CODE >85:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7772 text4 CODE >70:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7786 text4 CODE >88:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7792 text4 CODE >90:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+779A text4 CODE >92:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77A6 text4 CODE >94:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77B2 text4 CODE >95:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77B4 text4 CODE >96:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77B4 text4 CODE >98:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77B6 text4 CODE >99:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77B6 text4 CODE >100:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77B8 text4 CODE >90:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77C8 text4 CODE >104:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77CA text4 CODE >105:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77CE text4 CODE >106:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77D2 text4 CODE >107:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77D6 text4 CODE >108:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77D8 text4 CODE >109:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77DC text4 CODE >110:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77DE text4 CODE >111:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+77E0 text4 CODE >112:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+7C72 text3 CODE >112:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C72 text3 CODE >114:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C7C text3 CODE >116:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C7E text3 CODE >118:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C80 text3 CODE >120:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C84 text3 CODE >122:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C86 text3 CODE >125:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C8A text3 CODE >126:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C8C text3 CODE >128:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C90 text3 CODE >129:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C9A text3 CODE >130:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7C9C text3 CODE >132:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CA0 text3 CODE >133:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CA2 text3 CODE >135:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CA6 text3 CODE >136:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CB0 text3 CODE >137:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CB2 text3 CODE >140:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CBA text3 CODE >142:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CBE text3 CODE >143:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CC0 text3 CODE >122:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CC8 text3 CODE >122:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CCE text3 CODE >122:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CD4 text3 CODE >122:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CDA text3 CODE >122:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CE0 text3 CODE >146:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CE0 text3 CODE >147:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7CE6 text3 CODE >118:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+68F0 text2 CODE >36:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68F0 text2 CODE >38:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68F2 text2 CODE >39:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68F6 text2 CODE >40:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68FA text2 CODE >41:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+68FE text2 CODE >42:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+69E4 text1 CODE >100:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+69E4 text1 CODE >102:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+69E8 text1 CODE >103:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+69EC text1 CODE >104:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+69EE text1 CODE >105:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+69F2 text1 CODE >107:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+69F6 text1 CODE >108:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+69F8 text1 CODE >109:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+69FC text1 CODE >110:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+77E2 text0 CODE >63:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+77E2 text0 CODE >65:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+77E6 text0 CODE >67:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+77EA text0 CODE >68:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+77EE text0 CODE >69:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+77F0 text0 CODE >70:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+77F4 text0 CODE >72:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+77F8 text0 CODE >74:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+77FA text0 CODE >76:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+77FE text0 CODE >78:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7802 text0 CODE >80:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7806 text0 CODE >81:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7808 text0 CODE >82:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+780C text0 CODE >84:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7810 text0 CODE >85:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+782C text0 CODE >88:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7830 text0 CODE >89:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+783A text0 CODE >90:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7858 text0 CODE >91:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+786A text0 CODE >93:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+786E text0 CODE >74:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7874 text0 CODE >97:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7878 text0 CODE >98:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+7EFC cinit CODE >2950:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7EFC cinit CODE >2952:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7EFC cinit CODE >2955:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7EFC cinit CODE >3066:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7EFE cinit CODE >3067:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F00 cinit CODE >3068:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F02 cinit CODE >3069:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F04 cinit CODE >3070:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F06 cinit CODE >3071:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F08 cinit CODE >3072:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F0C cinit CODE >3073:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F10 cinit CODE >3074:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F10 cinit CODE >3075:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F12 cinit CODE >3076:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F16 cinit CODE >3077:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F18 cinit CODE >3078:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F1A cinit CODE >3079:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F1C cinit CODE >3083:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F1E cinit CODE >3084:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F20 cinit CODE >3085:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F22 cinit CODE >3086:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F24 cinit CODE >3087:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F26 cinit CODE >3090:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F2A cinit CODE >3091:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F2C cinit CODE >3092:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F2C cinit CODE >3093:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F2E cinit CODE >3094:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F30 cinit CODE >3095:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F32 cinit CODE >3101:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F32 cinit CODE >3104:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F34 cinit CODE >3105:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F36 cinit CODE >3106:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+7F38 cinit CODE >3107:D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\comp\main.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__end_of_HID_rx 68D6 0 CODE 0 text11 comp\main.o
+__end_of_HID_tx 68E0 0 CODE 0 text9 comp\main.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 comp\main.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst comp\main.o
+USBStdGetStatusHandler@p 3A 0 COMRAM 1 cstackCOMRAM comp\main.o
+__Hspace_0 7FFE 0 ABS 0 - comp\main.o
+__Hspace_1 68 0 ABS 0 - comp\main.o
+__Hspace_2 0 0 ABS 0 - comp\main.o
+__Hspace_4 60000E 0 ABS 0 - comp\main.o
+_USB1msTickCount 60 0 BANK0 1 bssBANK0 comp\main.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 comp\main.o
+__size_of_init_APP 0 0 ABS 0 - comp\main.o
+USBTransferOnePacket@dir 3A 0 COMRAM 1 cstackCOMRAM comp\main.o
+USBTransferOnePacket@len 3D 0 COMRAM 1 cstackCOMRAM comp\main.o
+__Hibigdata 0 0 CODE 0 ibigdata comp\main.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst comp\startup.o
+__size_of_USBCtrlEPServiceComplete 0 0 ABS 0 - comp\main.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data comp\main.o
+__end_of_USBStdSetCfgHandler 74F6 0 CODE 0 text25 comp\main.o
+USBEnableEndpoint@options 42 0 COMRAM 1 cstackCOMRAM comp\main.o
+_TBLPTRH FF7 0 ABS 0 - comp\main.o
+_TBLPTRL FF6 0 ABS 0 - comp\main.o
+_TBLPTRU FF8 0 ABS 0 - comp\main.o
+__size_of_USBIncrement1msInternalTimers 0 0 ABS 0 - comp\main.o
+__Lsmallconst 6900 0 SMALLCONST 0 smallconst comp\main.o
+_LATB F8A 0 ABS 0 - comp\main.o
+_UCFG F6F 0 ABS 0 - comp\main.o
+_UCON F6D 0 ABS 0 - comp\main.o
+_UEIE F6B 0 ABS 0 - comp\main.o
+_UEIR F6A 0 ABS 0 - comp\main.o
+_UEP0 F70 0 ABS 0 - comp\main.o
+_UEP1 F71 0 ABS 0 - comp\main.o
+___sp 0 0 STACK 2 stack comp\startup.o
+_boot 7C72 0 CODE 0 text3 comp\main.o
+_main 77E2 0 CODE 0 text0 comp\main.o
+_pDst 1D 0 COMRAM 1 bssCOMRAM comp\main.o
+__size_of_USBCtrlTrfTxService 0 0 ABS 0 - comp\main.o
+start 0 0 CODE 0 init comp\startup.o
+__end_of_USBCheckHIDRequest 736C 0 CODE 0 text34 comp\main.o
+_USBTransferOnePacket 70D6 0 CODE 0 text31 comp\main.o
+__size_of_boot 0 0 ABS 0 - comp\main.o
+__size_of_main 0 0 ABS 0 - comp\main.o
+_active_protocol 35 0 COMRAM 1 bssCOMRAM comp\main.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM comp\main.o
+_USBDeviceInit 6DAE 0 CODE 0 text18 comp\main.o
+_flash_write_B32 7A3E 0 CODE 0 text6 comp\main.o
+_pBDTEntryEP0OutNext 1F 0 COMRAM 1 bssCOMRAM comp\main.o
+_TMR0_1S_config 68F0 0 CODE 0 text2 comp\main.o
+__size_of_USBDeviceTasks 0 0 ABS 0 - comp\main.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 comp\main.o
+erase_falsh@i 3E 0 COMRAM 1 cstackCOMRAM comp\main.o
+USBCtrlTrfInHandler@lastDTS 3B 0 COMRAM 1 cstackCOMRAM comp\main.o
+_USBConfigureEndpoint 7BE6 0 CODE 0 text33 comp\main.o
+__Hpowerup 0 0 CODE 0 powerup comp\main.o
+_UEP0bits F70 0 ABS 0 - comp\main.o
+_CtrlTrfData 428 0 ABS 1 - comp\main.o
+__end_of_Write_event 7BE6 0 CODE 0 text5 comp\main.o
+__size_of_erase_falsh 0 0 ABS 0 - comp\main.o
+__accesstop 60 0 ABS 0 - comp\startup.o
+intlevel0 0 0 CODE 0 text comp\startup.o
+intlevel1 0 0 CODE 0 text comp\startup.o
+intlevel2 0 0 CODE 0 text comp\startup.o
+intlevel3 0 0 CODE 0 text comp\startup.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM comp\main.o
+__end_of_flash_read_byte 7E1C 0 CODE 0 text10 comp\main.o
+_init_APP 69E4 0 CODE 0 text1 comp\main.o
+_Read_event 7CF0 0 CODE 0 text7 comp\main.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM comp\main.o
+_pBDTEntryIn 11 0 COMRAM 1 bssCOMRAM comp\main.o
+_USBCheckHIDRequest 729A 0 CODE 0 text34 comp\main.o
+__size_of_USBCtrlTrfRxService 0 0 ABS 0 - comp\main.o
+__size_of_USBEnableEndpoint 0 0 ABS 0 - comp\main.o
+__Hifardata 0 0 CODE 0 ifardata comp\main.o
+_controlTransferState 32 0 COMRAM 1 bssCOMRAM comp\main.o
+_USBCtrlTrfTxService 736C 0 CODE 0 text39 comp\main.o
+__Hclrtext 0 0 ABS 0 clrtext comp\main.o
+__end_of_init_APP 69FE 0 CODE 0 text1 comp\main.o
+__size_of_USBCtrlEPAllowDataStage 0 0 ABS 0 - comp\main.o
+_HID_transf 69FE 0 CODE 0 _HID_transf_text comp\main.o
+USBDeviceInit@i 42 0 COMRAM 1 cstackCOMRAM comp\main.o
+_idle_rate 36 0 COMRAM 1 bssCOMRAM comp\main.o
+___inthi_sp 0 0 STACK 2 stack comp\startup.o
+__end_of_TMR0_1S_config 6900 0 CODE 0 text2 comp\main.o
+___intlo_sp 0 0 STACK 2 stack comp\startup.o
+_EECON1bits FA6 0 ABS 0 - comp\main.o
+__end_of_USBCtrlEPServiceComplete 729A 0 CODE 0 text22 comp\main.o
+__Hintcode_body 0 0 ABS 0 intcode_body comp\main.o
+?_USBTransferOnePacket 3A 0 COMRAM 1 cstackCOMRAM comp\main.o
+__end_of_USBStdGetStatusHandler 7A3E 0 CODE 0 text27 comp\main.o
+_EECON1 FA6 0 ABS 0 - comp\main.o
+_EECON2 FA7 0 ABS 0 - comp\main.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs comp\main.o
+_SetupPkt 420 0 ABS 1 - comp\main.o
+__size_of_USBCtrlTrfOutHandler 0 0 ABS 0 - comp\main.o
+USBEnableEndpoint@ep 45 0 COMRAM 1 cstackCOMRAM comp\main.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst comp\main.o
+__Hintcodelo 0 0 CODE 0 intcodelo comp\main.o
+__size_of_USBStdGetDscHandler 0 0 ABS 0 - comp\main.o
+__end_of_USBStallHandler 7EFC 0 CODE 0 text16 comp\main.o
+_flash_read_byte 7DC2 0 CODE 0 text10 comp\main.o
+_USBCtrlTrfSetupHandler 7ACC 0 CODE 0 text21 comp\main.o
+_HID_rx 68CC 0 CODE 0 text11 comp\main.o
+_HID_tx 68D6 0 CODE 0 text9 comp\main.o
+__end_of_USBCtrlEPAllowStatusStage 75B8 0 CODE 0 text37 comp\main.o
+_USBCtrlTrfRxService 6EC8 0 CODE 0 text36 comp\main.o
+USBStdFeatureReqHandler@pUEP 50 0 COMRAM 1 cstackCOMRAM comp\main.o
+_USBInHandle 23 0 COMRAM 1 bssCOMRAM comp\main.o
+USBCtrlTrfRxService@byteToRead 3B 0 COMRAM 1 cstackCOMRAM comp\main.o
+flash_write_B32@addr 3F 0 COMRAM 1 cstackCOMRAM comp\main.o
+__size_of_flash_write_B32 0 0 ABS 0 - comp\main.o
+__size_of_USBDeviceInit 0 0 ABS 0 - comp\main.o
+__end_of_Read_event 7D66 0 CODE 0 text7 comp\main.o
+__end_of_USBCtrlTrfOutHandler 7DC2 0 CODE 0 text35 comp\main.o
+_USBBusIsSuspended 30 0 COMRAM 1 bssCOMRAM comp\main.o
+memcpy@tmp 44 0 COMRAM 1 cstackCOMRAM comp\main.o
+__end_of_HID_transf 6A52 0 CODE 0 _HID_transf_text comp\main.o
+_USBDeferOUTDataStagePackets 28 0 COMRAM 1 bssCOMRAM comp\main.o
+__Lintcodelo 0 0 CODE 0 intcodelo comp\main.o
+start_initialization 7EFC 0 CODE 0 cinit comp\main.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM comp\main.o
+__end_of_USBCheckStdRequest 7674 0 CODE 0 text24 comp\main.o
+___rparam_used 1 0 ABS 0 - comp\main.o
+_device_dsc 69AD 0 SMALLCONST 0 smallconst comp\main.o
+__end_of_memcpy 7EBA 0 CODE 0 text20 comp\main.o
+__end_of_memset 7FFE 0 CODE 0 text26 comp\main.o
+_USBTicksSinceSuspendEnd 27 0 COMRAM 1 bssCOMRAM comp\main.o
+__end_of_USBDeviceInit 6EC8 0 CODE 0 text18 comp\main.o
+_USBStdGetDscHandler 6FD0 0 CODE 0 text28 comp\main.o
+__end_of_USER_USB_CALLBACK_EVENT_HANDLER 7E76 0 CODE 0 text30 comp\main.o
+__size_of_HID_rx 0 0 ABS 0 - comp\main.o
+__size_of_HID_tx 0 0 ABS 0 - comp\main.o
+_TABLAT FF5 0 ABS 0 - comp\main.o
+_TBLPTR FF6 0 ABS 0 - comp\main.o
+__end_of_USBCtrlTrfTxService 7432 0 CODE 0 text39 comp\main.o
+_USBStallHandler 7EBA 0 CODE 0 text16 comp\main.o
+isa$xinst 0 0 ABS 0 - comp\startup.o
+__end_of_USBEnableEndpoint 7F74 0 CODE 0 text32 comp\main.o
+__size_of_Write_event 0 0 ABS 0 - comp\main.o
+_UIEbits F69 0 ABS 0 - comp\main.o
+_UIRbits F68 0 ABS 0 - comp\main.o
+__Hbank0 0 0 ABS 0 bank0 comp\main.o
+__Hbank1 0 0 ABS 0 bank1 comp\main.o
+__Hbank2 0 0 ABS 0 bank2 comp\main.o
+__Hbank3 0 0 ABS 0 bank3 comp\main.o
+__Hbank4 0 0 ABS 0 bank4 comp\main.o
+__Hbank5 0 0 ABS 0 bank5 comp\main.o
+__Hbank6 0 0 ABS 0 bank6 comp\main.o
+__Hbank7 0 0 ABS 0 bank7 comp\main.o
+__Hcinit 0 0 ABS 0 cinit comp\main.o
+__Hconst 0 0 CONST 0 const comp\main.o
+__end_of_USBWakeFromSuspend 7FA6 0 CODE 0 text14 comp\main.o
+__Hidata 0 0 CODE 0 idata comp\main.o
+__Hidloc 200008 0 IDLOC 5 idloc comp\main.o
+__Hnvbit 0 0 COMRAM 1 nvbit comp\main.o
+__Hparam 0 0 COMRAM 1 rparam comp\main.o
+__Hrdata 0 0 COMRAM 1 rdata comp\main.o
+__Hstack 0 0 STACK 2 stack comp\main.o
+__Htext0 0 0 ABS 0 text0 comp\main.o
+__Htext1 0 0 ABS 0 text1 comp\main.o
+__Htext2 0 0 ABS 0 text2 comp\main.o
+__Htext3 0 0 ABS 0 text3 comp\main.o
+__Htext4 0 0 ABS 0 text4 comp\main.o
+__Htext5 0 0 ABS 0 text5 comp\main.o
+__Htext6 0 0 ABS 0 text6 comp\main.o
+__Htext7 0 0 ABS 0 text7 comp\main.o
+__Htext8 0 0 ABS 0 text8 comp\main.o
+__Htext9 0 0 ABS 0 text9 comp\main.o
+_USBCtrlEPService 787C 0 CODE 0 text19 comp\main.o
+__size_of_USBCtrlEPAllowStatusStage 0 0 ABS 0 - comp\main.o
+__Hbigbss 0 0 BIGRAM 1 bigbss comp\main.o
+__Hbigram 0 0 ABS 0 bigram comp\main.o
+__smallconst 6900 0 SMALLCONST 0 smallconst comp\startup.o
+_USBCheckStdRequest 75B8 0 CODE 0 text24 comp\main.o
+_USBIncrement1msInternalTimers 69C4 0 CODE 0 text17 comp\main.o
+_response_event 68E0 0 CODE 0 text8 comp\main.o
+USBStdFeatureReqHandler@p 53 0 COMRAM 1 cstackCOMRAM comp\main.o
+__Hcomram 0 0 ABS 0 comram comp\main.o
+__Hconfig 30000E 0 CONFIG 4 config comp\main.o
+USER_USB_CALLBACK_EVENT_HANDLER@event 46 0 COMRAM 1 cstackCOMRAM comp\main.o
+USER_USB_CALLBACK_EVENT_HANDLER@size 4A 0 COMRAM 1 cstackCOMRAM comp\main.o
+USBTransferOnePacket@handle 41 0 COMRAM 1 cstackCOMRAM comp\main.o
+USER_USB_CALLBACK_EVENT_HANDLER@pdata 48 0 COMRAM 1 cstackCOMRAM comp\main.o
+__Lbank0 0 0 ABS 0 bank0 comp\main.o
+__Lbank1 0 0 ABS 0 bank1 comp\main.o
+__Lbank2 0 0 ABS 0 bank2 comp\main.o
+__Lbank3 0 0 ABS 0 bank3 comp\main.o
+__Lbank4 0 0 ABS 0 bank4 comp\main.o
+__Lbank5 0 0 ABS 0 bank5 comp\main.o
+__Lbank6 0 0 ABS 0 bank6 comp\main.o
+__Lbank7 0 0 ABS 0 bank7 comp\main.o
+__size_of_flash_read_byte 0 0 ABS 0 - comp\main.o
+__Lcinit 0 0 ABS 0 cinit comp\main.o
+__Lconst 0 0 CONST 0 const comp\main.o
+__Lidata 0 0 CODE 0 idata comp\main.o
+__Lidloc 0 0 IDLOC 5 idloc comp\main.o
+__p_HID_transf_text 69FE 0 CODE 0 _HID_transf_text comp\main.o
+__Lnvbit 0 0 COMRAM 1 nvbit comp\main.o
+__Lparam 0 0 COMRAM 1 rparam comp\main.o
+__Lrdata 0 0 COMRAM 1 rdata comp\main.o
+__Lstack 0 0 STACK 2 stack comp\main.o
+__Ltext0 0 0 ABS 0 text0 comp\main.o
+__Ltext1 0 0 ABS 0 text1 comp\main.o
+__Ltext2 0 0 ABS 0 text2 comp\main.o
+__Ltext3 0 0 ABS 0 text3 comp\main.o
+__Ltext4 0 0 ABS 0 text4 comp\main.o
+__Ltext5 0 0 ABS 0 text5 comp\main.o
+__Ltext6 0 0 ABS 0 text6 comp\main.o
+__Ltext7 0 0 ABS 0 text7 comp\main.o
+__Ltext8 0 0 ABS 0 text8 comp\main.o
+__Ltext9 0 0 ABS 0 text9 comp\main.o
+__Hfarbss 0 0 FARRAM 0 farbss comp\main.o
+__Lintcode_body 0 0 ABS 0 intcode_body comp\main.o
+__end_of_USBCtrlTrfRxService 6FD0 0 CODE 0 text36 comp\main.o
+_erase_falsh 7730 0 CODE 0 text4 comp\main.o
+memcpy@d1 3A 0 COMRAM 1 cstackCOMRAM comp\main.o
+memcpy@s1 3C 0 COMRAM 1 cstackCOMRAM comp\main.o
+_INTCONbits FF2 0 ABS 0 - comp\main.o
+__Habs1 0 0 ABS 0 abs1 comp\main.o
+__Hdata 0 0 ABS 0 data comp\main.o
+__Hinit 4 0 CODE 0 init comp\main.o
+__Hrbit 0 0 COMRAM 1 rbit comp\main.o
+__Hrbss 0 0 COMRAM 1 rbss comp\main.o
+__Htemp 0 0 COMRAM 1 temp comp\main.o
+__Htext 0 0 ABS 0 text comp\main.o
+__Labs1 0 0 ABS 0 abs1 comp\main.o
+__Ldata 0 0 ABS 0 data comp\main.o
+__Linit 0 0 CODE 0 init comp\main.o
+__Lrbit 0 0 COMRAM 1 rbit comp\main.o
+__Lrbss 0 0 COMRAM 1 rbss comp\main.o
+__Ltemp 0 0 COMRAM 1 temp comp\main.o
+__Ltext 0 0 ABS 0 text comp\main.o
+_SYS_state 0 0 ABS 0 - comp\main.o
+memcpy@d 40 0 COMRAM 1 cstackCOMRAM comp\main.o
+memcpy@n 3E 0 COMRAM 1 cstackCOMRAM comp\main.o
+memcpy@s 42 0 COMRAM 1 cstackCOMRAM comp\main.o
+memset@c 3C 0 COMRAM 1 cstackCOMRAM comp\main.o
+memset@n 3E 0 COMRAM 1 cstackCOMRAM comp\main.o
+memset@p 40 0 COMRAM 1 cstackCOMRAM comp\main.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM comp\main.o
+__end_of_device_dsc 69BF 0 SMALLCONST 0 smallconst comp\main.o
+_ToSendDataBuffer 540 0 ABS 0 - comp\main.o
+__size_of_USBCtrlTrfInHandler 0 0 ABS 0 - comp\main.o
+__Hintret 0 0 ABS 0 intret comp\main.o
+_USBSuspend 7FA6 0 CODE 0 text15 comp\main.o
+__Hirdata 0 0 CODE 0 irdata comp\main.o
+_BDT 400 0 ABS 1 - comp\main.o
+_UIE F69 0 ABS 0 - comp\main.o
+_UIR F68 0 ABS 0 - comp\main.o
+__S0 7FFE 0 ABS 0 - comp\main.o
+__S1 68 0 ABS 0 - comp\main.o
+__S2 0 0 ABS 0 - comp\main.o
+__S4 0 0 ABS 0 - comp\main.o
+__S5 0 0 ABS 0 - comp\main.o
+_USBWakeFromSuspend 7F74 0 CODE 0 text14 comp\main.o
+_USBStdFeatureReqHandler 6A52 0 CODE 0 text29 comp\main.o
+_BothEP0OutUOWNsSet 2E 0 COMRAM 1 bssCOMRAM comp\main.o
+__H_HID_transf_text 6A52 0 CODE 0 _HID_transf_text comp\main.o
+_UCONbits F6D 0 ABS 0 - comp\main.o
+USBCtrlTrfRxService@i 3A 0 COMRAM 1 cstackCOMRAM comp\main.o
+__size_of_USBCheckHIDRequest 0 0 ABS 0 - comp\main.o
+__end_of_USBStdFeatureReqHandler 6C70 0 CODE 0 text29 comp\main.o
+__Lbigdata 0 0 BIGRAM 1 bigdata comp\main.o
+_ReceivedDataBuffer 500 0 ABS 0 - comp\main.o
+__Hnvrram 0 0 COMRAM 1 nvrram comp\main.o
+_HID_transf_absaddr 69FE 0 ABS 0 - comp\main.o
+_USBAlternateInterface 38 0 COMRAM 1 bssCOMRAM comp\main.o
+__end_of_response_event 68F0 0 CODE 0 text8 comp\main.o
+_USBDeviceState 34 0 COMRAM 1 bssCOMRAM comp\main.o
+_USBDeviceTasks 6C70 0 CODE 0 text13 comp\main.o
+__size_of_USBStdGetStatusHandler 0 0 ABS 0 - comp\main.o
+__end_of_USBStdGetDscHandler 70D6 0 CODE 0 text28 comp\main.o
+__Lintentry 0 0 ABS 0 intentry comp\main.o
+__size_of_USBStallHandler 0 0 ABS 0 - comp\main.o
+__end_of_USBCtrlTrfSetupHandler 7B5A 0 CODE 0 text21 comp\main.o
+__Hramtop 800 0 RAM 0 ramtop comp\main.o
+__Hrparam 0 0 COMRAM 1 rparam comp\main.o
+_USBEnableEndpoint 7F3C 0 CODE 0 text32 comp\main.o
+__pdataBANK0 64 0 BANK0 1 dataBANK0 comp\main.o
+__activetblptr 2 0 ABS 0 - comp\main.o
+__Hstruct 0 0 COMRAM 1 struct comp\main.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 comp\main.o
+__Htext10 0 0 ABS 0 text10 comp\main.o
+__Htext11 0 0 ABS 0 text11 comp\main.o
+__Htext13 0 0 ABS 0 text13 comp\main.o
+__Htext14 0 0 ABS 0 text14 comp\main.o
+__Htext15 0 0 ABS 0 text15 comp\main.o
+__Htext16 0 0 ABS 0 text16 comp\main.o
+__Htext17 0 0 ABS 0 text17 comp\main.o
+__Htext18 0 0 ABS 0 text18 comp\main.o
+__Htext19 0 0 ABS 0 text19 comp\main.o
+__Htext20 0 0 ABS 0 text20 comp\main.o
+__Htext21 0 0 ABS 0 text21 comp\main.o
+__Htext22 0 0 ABS 0 text22 comp\main.o
+__Htext23 0 0 ABS 0 text23 comp\main.o
+__Htext24 0 0 ABS 0 text24 comp\main.o
+__Htext25 0 0 ABS 0 text25 comp\main.o
+__Htext26 0 0 ABS 0 text26 comp\main.o
+__Htext27 0 0 ABS 0 text27 comp\main.o
+__Htext28 0 0 ABS 0 text28 comp\main.o
+__Htext29 0 0 ABS 0 text29 comp\main.o
+__Htext30 0 0 ABS 0 text30 comp\main.o
+__Htext31 0 0 ABS 0 text31 comp\main.o
+__Htext32 0 0 ABS 0 text32 comp\main.o
+__Htext33 0 0 ABS 0 text33 comp\main.o
+__Htext34 0 0 ABS 0 text34 comp\main.o
+__Htext35 0 0 ABS 0 text35 comp\main.o
+__Htext36 0 0 ABS 0 text36 comp\main.o
+__Htext37 0 0 ABS 0 text37 comp\main.o
+__Htext38 0 0 ABS 0 text38 comp\main.o
+__Htext39 0 0 ABS 0 text39 comp\main.o
+__end_of_USBCtrlEPService 7912 0 CODE 0 text19 comp\main.o
+__size_of_Read_event 0 0 ABS 0 - comp\main.o
+_USBCtrlTrfInHandler 7674 0 CODE 0 text38 comp\main.o
+__size_of_USBTransferOnePacket 0 0 ABS 0 - comp\main.o
+_PIE2bits FA0 0 ABS 0 - comp\main.o
+_memcpy 7E76 0 CODE 0 text20 comp\main.o
+_memset 7FD2 0 CODE 0 text26 comp\main.o
+USBConfigureEndpoint@handle 40 0 COMRAM 1 cstackCOMRAM comp\main.o
+memset@p1 3A 0 COMRAM 1 cstackCOMRAM comp\main.o
+__ptext10 7DC2 0 CODE 0 text10 comp\main.o
+__ptext11 68CC 0 CODE 0 text11 comp\main.o
+__ptext13 6C70 0 CODE 0 text13 comp\main.o
+__ptext14 7F74 0 CODE 0 text14 comp\main.o
+__ptext15 7FA6 0 CODE 0 text15 comp\main.o
+__ptext16 7EBA 0 CODE 0 text16 comp\main.o
+__ptext17 69C4 0 CODE 0 text17 comp\main.o
+__ptext18 6DAE 0 CODE 0 text18 comp\main.o
+__ptext19 787C 0 CODE 0 text19 comp\main.o
+__ptext20 7E76 0 CODE 0 text20 comp\main.o
+__ptext21 7ACC 0 CODE 0 text21 comp\main.o
+__ptext22 71BC 0 CODE 0 text22 comp\main.o
+__ptext23 7912 0 CODE 0 text23 comp\main.o
+__ptext24 75B8 0 CODE 0 text24 comp\main.o
+__ptext25 7432 0 CODE 0 text25 comp\main.o
+__ptext26 7FD2 0 CODE 0 text26 comp\main.o
+__ptext27 79A8 0 CODE 0 text27 comp\main.o
+__ptext28 6FD0 0 CODE 0 text28 comp\main.o
+__ptext29 6A52 0 CODE 0 text29 comp\main.o
+__ptext30 7E1C 0 CODE 0 text30 comp\main.o
+__ptext31 70D6 0 CODE 0 text31 comp\main.o
+__ptext32 7F3C 0 CODE 0 text32 comp\main.o
+__ptext33 7BE6 0 CODE 0 text33 comp\main.o
+__ptext34 729A 0 CODE 0 text34 comp\main.o
+__ptext35 7D66 0 CODE 0 text35 comp\main.o
+__ptext36 6EC8 0 CODE 0 text36 comp\main.o
+__ptext37 74F6 0 CODE 0 text37 comp\main.o
+__ptext38 7674 0 CODE 0 text38 comp\main.o
+__ptext39 736C 0 CODE 0 text39 comp\main.o
+__size_of_USBCtrlEPService 0 0 ABS 0 - comp\main.o
+__end_of_configDescriptor1 6990 0 SMALLCONST 0 smallconst comp\main.o
+__end_of_USBSuspend 7FD2 0 CODE 0 text15 comp\main.o
+__size_of_HID_transf 0 0 ABS 0 - comp\main.o
+erase_falsh@F3710 64 0 BANK0 1 dataBANK0 comp\main.o
+__Lbigbss 0 0 BIGRAM 1 bigbss comp\main.o
+__Lbigram 0 0 ABS 0 bigram comp\main.o
+_USB_CD_Ptr 6904 0 SMALLCONST 0 smallconst comp\main.o
+_ep_data_in 1B 0 COMRAM 1 bssCOMRAM comp\main.o
+_USBActiveConfiguration 39 0 COMRAM 1 bssCOMRAM comp\main.o
+_USBCtrlEPAllowStatusStage 74F6 0 CODE 0 text37 comp\main.o
+__size_of_USBConfigureEndpoint 0 0 ABS 0 - comp\main.o
+__Lcomram 0 0 ABS 0 comram comp\main.o
+__Lconfig 0 0 CONFIG 4 config comp\main.o
+__size_of_TMR0_1S_config 0 0 ABS 0 - comp\main.o
+_LATBbits F8A 0 ABS 0 - comp\main.o
+__end_of_USBTransferOnePacket 71BC 0 CODE 0 text31 comp\main.o
+_RemoteWakeup 31 0 COMRAM 1 bssCOMRAM comp\main.o
+__Lfarbss 0 0 FARRAM 0 farbss comp\main.o
+__end_of_USBDeviceTasks 6DAE 0 CODE 0 text13 comp\main.o
+_ep_data_out 19 0 COMRAM 1 bssCOMRAM comp\main.o
+__Lfardata 0 0 FARRAM 0 fardata comp\main.o
+isa$std 1 0 ABS 0 - comp\startup.o
+USBEnableEndpoint@p 43 0 COMRAM 1 cstackCOMRAM comp\main.o
+stackhi 7FF 0 ABS 0 - comp\startup.o
+stacklo 430 0 ABS 0 - comp\startup.o
+__end_of_USBConfigureEndpoint 7C72 0 CODE 0 text33 comp\main.o
+_USBCtrlEPAllowDataStage 7912 0 CODE 0 text23 comp\main.o
+__Lintcode 0 0 CODE 0 intcode comp\main.o
+__Lintret 0 0 ABS 0 intret comp\main.o
+__Lirdata 0 0 CODE 0 irdata comp\main.o
+__end_of_USBCtrlEPAllowDataStage 79A8 0 CODE 0 text23 comp\main.o
+__Lspace_0 0 0 ABS 0 - comp\main.o
+__Lspace_1 0 0 ABS 0 - comp\main.o
+__Lspace_2 0 0 ABS 0 - comp\main.o
+__Lspace_4 0 0 ABS 0 - comp\main.o
+__pbssCOMRAM 3 0 COMRAM 1 bssCOMRAM comp\main.o
+__size_of_memcpy 0 0 ABS 0 - comp\main.o
+__size_of_memset 0 0 ABS 0 - comp\main.o
+_USBCtrlTrfOutHandler 7D66 0 CODE 0 text35 comp\main.o
+_PIR2bits FA1 0 ABS 0 - comp\main.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM comp\main.o
+USBStdSetCfgHandler@i 4E 0 COMRAM 1 cstackCOMRAM comp\main.o
+_PT0_BOOT 1 0 ABS 0 - comp\main.o
+end_of_initialization 7F32 0 CODE 0 cinit comp\main.o
+_Write_event 7B5A 0 CODE 0 text5 comp\main.o
+__size_of_USBStdSetCfgHandler 0 0 ABS 0 - comp\main.o
+__Lnvrram 0 0 COMRAM 1 nvrram comp\main.o
+__Hintentry 0 0 ABS 0 intentry comp\main.o
+_USBDeferStatusStagePacket 2C 0 COMRAM 1 bssCOMRAM comp\main.o
+_USER_USB_CALLBACK_EVENT_HANDLER 7E1C 0 CODE 0 text30 comp\main.o
+__Hreset_vec 0 0 CODE 0 reset_vec comp\main.o
+_inPipes B 0 COMRAM 1 bssCOMRAM comp\main.o
+_shortPacketStatus 33 0 COMRAM 1 bssCOMRAM comp\main.o
+__end_of_USB_CD_Ptr 6905 0 SMALLCONST 0 smallconst comp\main.o
+USBTransferOnePacket@ep 40 0 COMRAM 1 cstackCOMRAM comp\main.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 comp\main.o
+_endpoint_number 2F 0 COMRAM 1 bssCOMRAM comp\main.o
+__Lramtop 800 0 RAM 0 ramtop comp\main.o
+USBConfigureEndpoint@EPNum 3F 0 COMRAM 1 cstackCOMRAM comp\main.o
+__Lrparam 0 0 COMRAM 1 rparam comp\main.o
+response_event@c0 59 0 COMRAM 1 cstackCOMRAM comp\main.o
+response_event@c1 58 0 COMRAM 1 cstackCOMRAM comp\main.o
+_USB_SD_Ptr 6901 0 SMALLCONST 0 smallconst comp\main.o
+__pcinit 7EFC 0 CODE 0 cinit comp\main.o
+__ptext0 77E2 0 CODE 0 text0 comp\main.o
+__ptext1 69E4 0 CODE 0 text1 comp\main.o
+__ptext2 68F0 0 CODE 0 text2 comp\main.o
+__ptext3 7C72 0 CODE 0 text3 comp\main.o
+__ptext4 7730 0 CODE 0 text4 comp\main.o
+__ptext5 7B5A 0 CODE 0 text5 comp\main.o
+__ptext6 7A3E 0 CODE 0 text6 comp\main.o
+__ptext7 7CF0 0 CODE 0 text7 comp\main.o
+__ptext8 68E0 0 CODE 0 text8 comp\main.o
+__ptext9 68D6 0 CODE 0 text9 comp\main.o
+__Lstruct 0 0 COMRAM 1 struct comp\main.o
+__size_of_USBCheckStdRequest 0 0 ABS 0 - comp\main.o
+__end_of_USBIncrement1msInternalTimers 69E4 0 CODE 0 text17 comp\main.o
+__Ltext10 0 0 ABS 0 text10 comp\main.o
+__Ltext11 0 0 ABS 0 text11 comp\main.o
+__Ltext13 0 0 ABS 0 text13 comp\main.o
+__Ltext14 0 0 ABS 0 text14 comp\main.o
+__Ltext15 0 0 ABS 0 text15 comp\main.o
+__Ltext16 0 0 ABS 0 text16 comp\main.o
+__Ltext17 0 0 ABS 0 text17 comp\main.o
+__Ltext18 0 0 ABS 0 text18 comp\main.o
+__Ltext19 0 0 ABS 0 text19 comp\main.o
+__Ltext20 0 0 ABS 0 text20 comp\main.o
+__Ltext21 0 0 ABS 0 text21 comp\main.o
+__Ltext22 0 0 ABS 0 text22 comp\main.o
+__Ltext23 0 0 ABS 0 text23 comp\main.o
+__Ltext24 0 0 ABS 0 text24 comp\main.o
+__Ltext25 0 0 ABS 0 text25 comp\main.o
+__Ltext26 0 0 ABS 0 text26 comp\main.o
+__Ltext27 0 0 ABS 0 text27 comp\main.o
+__Ltext28 0 0 ABS 0 text28 comp\main.o
+__Ltext29 0 0 ABS 0 text29 comp\main.o
+__Ltext30 0 0 ABS 0 text30 comp\main.o
+__Ltext31 0 0 ABS 0 text31 comp\main.o
+__Ltext32 0 0 ABS 0 text32 comp\main.o
+__Ltext33 0 0 ABS 0 text33 comp\main.o
+__Ltext34 0 0 ABS 0 text34 comp\main.o
+__Ltext35 0 0 ABS 0 text35 comp\main.o
+__Ltext36 0 0 ABS 0 text36 comp\main.o
+__Ltext37 0 0 ABS 0 text37 comp\main.o
+__Ltext38 0 0 ABS 0 text38 comp\main.o
+__Ltext39 0 0 ABS 0 text39 comp\main.o
+__end_of_USBCtrlTrfInHandler 7730 0 CODE 0 text38 comp\main.o
+__ramtop 800 0 RAM 0 ramtop comp\startup.o
+__L_HID_transf_text 69FE 0 CODE 0 _HID_transf_text comp\main.o
+_USBCtrlEPServiceComplete 71BC 0 CODE 0 text22 comp\main.o
+__Lpowerup 0 0 CODE 0 powerup comp\main.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data comp\main.o
+_configDescriptor1 6967 0 SMALLCONST 0 smallconst comp\main.o
+USBStdFeatureReqHandler@current_ep_data 52 0 COMRAM 1 cstackCOMRAM comp\main.o
+__psmallconst 6900 0 SMALLCONST 0 smallconst comp\main.o
+_pBDTEntryEP0OutCurrent 21 0 COMRAM 1 bssCOMRAM comp\main.o
+USBTransferOnePacket@data 3B 0 COMRAM 1 cstackCOMRAM comp\main.o
+__Lreset_vec 0 0 CODE 0 reset_vec comp\main.o
+_pBDTEntryOut 15 0 COMRAM 1 bssCOMRAM comp\main.o
+Write_event@i 5B 0 COMRAM 1 cstackCOMRAM comp\main.o
+___param_bank 0 0 ABS 0 - comp\main.o
+_USBStdSetCfgHandler 7432 0 CODE 0 text25 comp\main.o
+__Hbigdata 0 0 BIGRAM 1 bigdata comp\main.o
+__end_of__initialization 7F32 0 CODE 0 cinit comp\main.o
+__end_of_hid_rpt01 69AD 0 SMALLCONST 0 smallconst comp\main.o
+__Libigdata 0 0 CODE 0 ibigdata comp\main.o
+__size_of_USBWakeFromSuspend 0 0 ABS 0 - comp\main.o
+__pidataBANK0 68C8 0 CODE 0 idataBANK0 comp\main.o
+_HID_RT_sel 2 0 ABS 1 - comp\main.o
+__end_of_erase_falsh 77E2 0 CODE 0 text4 comp\main.o
+USBCtrlTrfTxService@byteToSend 3A 0 COMRAM 1 cstackCOMRAM comp\main.o
+_USTATcopy 37 0 COMRAM 1 bssCOMRAM comp\main.o
+__Lclrtext 0 0 ABS 0 clrtext comp\main.o
+_outPipes 3 0 COMRAM 1 bssCOMRAM comp\main.o
+erase_falsh@t_save 3A 0 COMRAM 1 cstackCOMRAM comp\main.o
+__size_of_USBCtrlTrfSetupHandler 0 0 ABS 0 - comp\main.o
+_USBStatusStageTimeoutCounter 2D 0 COMRAM 1 bssCOMRAM comp\main.o
+__pcstackCOMRAM 3A 0 COMRAM 1 cstackCOMRAM comp\main.o
+flash_write_B32@i 41 0 COMRAM 1 cstackCOMRAM comp\main.o
+_USBOutHandle 25 0 COMRAM 1 bssCOMRAM comp\main.o
+_hid_rpt01 6990 0 SMALLCONST 0 smallconst comp\main.o
+__end_of_USB_SD_Ptr 6904 0 SMALLCONST 0 smallconst comp\main.o
+__end_of_boot 7CF0 0 CODE 0 text3 comp\main.o
+__end_of_main 787C 0 CODE 0 text0 comp\main.o
+_PORTB F81 0 ABS 0 - comp\main.o
+_T0CON FD5 0 ABS 0 - comp\main.o
+_TMR0H FD7 0 ABS 0 - comp\main.o
+_TMR0L FD6 0 ABS 0 - comp\main.o
+_TRISB F93 0 ABS 0 - comp\main.o
+_UADDR F6E 0 ABS 0 - comp\main.o
+_USTAT F6C 0 ABS 0 - comp\main.o
+__end_of_sd000 69C3 0 SMALLCONST 0 smallconst comp\main.o
+__end_of_sd001 6939 0 SMALLCONST 0 smallconst comp\main.o
+__end_of_sd002 6967 0 SMALLCONST 0 smallconst comp\main.o
+flash_read_byte@i 3F 0 COMRAM 1 cstackCOMRAM comp\main.o
+__HRAM 0 0 ABS 0 - comp\main.o
+__Hbss 0 0 RAM 1 bss comp\main.o
+__Hram 0 0 ABS 0 ram comp\main.o
+__Hsfr 0 0 ABS 0 sfr comp\main.o
+__LRAM 1 0 ABS 0 - comp\main.o
+__Lbss 0 0 RAM 1 bss comp\main.o
+__Lram 0 0 ABS 0 ram comp\main.o
+__Lsfr 0 0 ABS 0 sfr comp\main.o
+_USBStdGetStatusHandler 79A8 0 CODE 0 text27 comp\main.o
+_USBDeferINDataStagePackets 29 0 COMRAM 1 bssCOMRAM comp\main.o
+_sd000 69BF 0 SMALLCONST 0 smallconst comp\main.o
+_sd001 6905 0 SMALLCONST 0 smallconst comp\main.o
+_sd002 6939 0 SMALLCONST 0 smallconst comp\main.o
+__size_of_USBSuspend 0 0 ABS 0 - comp\main.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 comp\main.o
+__initialization 7EFC 0 CODE 0 cinit comp\main.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 comp\main.o
+__end_of_flash_write_B32 7ACC 0 CODE 0 text6 comp\main.o
+USBDeviceTasks@i 57 0 COMRAM 1 cstackCOMRAM comp\main.o
+__size_of_USER_USB_CALLBACK_EVENT_HANDLER 0 0 ABS 0 - comp\main.o
+USBConfigureEndpoint@direction 3A 0 COMRAM 1 cstackCOMRAM comp\main.o
+__Hfardata 0 0 FARRAM 0 fardata comp\main.o
+__Hsmallconst 69C4 0 SMALLCONST 0 smallconst comp\main.o
+__size_of_response_event 0 0 ABS 0 - comp\main.o
+__Lifardata 0 0 CODE 0 ifardata comp\main.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs comp\main.o
+__size_of_USBStdFeatureReqHandler 0 0 ABS 0 - comp\main.o
+__Hintcode 0 0 CODE 0 intcode comp\main.o
+_USBStatusStageEnabledFlag1 2B 0 COMRAM 1 bssCOMRAM comp\main.o
+_USBStatusStageEnabledFlag2 2A 0 COMRAM 1 bssCOMRAM comp\main.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+_CtrlTrfData 1 428 8
+_SetupPkt 1 420 8
+_BDT 1 400 20
+_HID_RT_sel 1 2 1
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text2 0 68F0 68F0 10 1
+text8 0 68E0 68E0 10 1
+text9 0 68D6 68D6 A 1
+text11 0 68CC 68CC A 1
+text17 0 69C4 69C4 3A 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 8 1
+smallconst 0 6900 6900 C4 1
+idataBANK0 0 68C8 68C8 4 1
+_HID_transf_text 0 69FE 69FE 1600 1
+bssCOMRAM 1 3 3 5A 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

@@ -1,0 +1,1 @@
+ comp/usb_descriptors.d  comp/usb_descriptors.p1:  system/usb_descriptors.c system/usb_common.h system/usb_hal_pic18.h system/usb_ch9.h system/usb_device.h system/usb_config.h system/usb_device_hid.h system/usb.h system/usb_hal.h

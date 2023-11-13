@@ -1,0 +1,1 @@
+ comp/usb_device.d  comp/usb_device.p1:  system/usb_device.c system/usb_common.h system/usb_device_local.h system/usb_hal_pic18.h system/usb_ch9.h system/usb_device.h system/usb_config.h system/usb.h system/usb_hal.h

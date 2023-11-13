@@ -1,0 +1,1029 @@
+[p GLOBOPT AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"89 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+[e E3311 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"23 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+[e E3311 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"141 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+[e E3397 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"717
+[e E3338 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"2021
+[e E3406 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"26 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+[e E3252 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"27
+[e E3320 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"62 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"19 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"27 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"8 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+"10 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"63 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+[v _main main `(v  1 e 1 0 ]
+"100
+[v _init_APP init_APP `(v  1 e 1 0 ]
+"112
+[v _boot boot `T(v  1 e 1 0 ]
+"151
+[v _Write_event Write_event `T(v  1 e 1 0 ]
+"192
+[v _Read_event Read_event `T(v  1 e 1 0 ]
+"3 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+[v _flash_write_B32 flash_write_B32 `(uc  1 e 1 0 ]
+"65
+[v _erase_falsh erase_falsh `(v  1 e 1 0 ]
+"114
+[v _flash_read_byte flash_read_byte `(v  1 e 1 0 ]
+"5 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+[v _HID_tx HID_tx `T(v  1 e 1 0 ]
+"11
+[v _HID_rx HID_rx `T(v  1 e 1 0 ]
+"18
+[v _HID_transf HID_transf `(v  1 e 1 @27135 ]
+"36
+[v _TMR0_1S_config TMR0_1S_config `(v  1 e 1 0 ]
+"44
+[v _response_event response_event `T(v  1 e 1 0 ]
+"281 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+"481
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+"882
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+"999
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+"1420
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+"1492
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+"1547
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+"1620
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+"1775
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+"1856
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+"1972
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+"2047
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+"2133
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+"2209
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+"2252
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+"2310
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+"2379
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+"2472
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+"2545
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+"2599
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+"2693
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+"2761
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+"2998
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 1 0 ]
+"161 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+[v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 1 0 ]
+"25 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(uc  1 e 1 0 ]
+"375 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\include\proc\pic18f4550.h
+[v _UIR UIR `VEuc  1 e 1 @3944 ]
+[s S754 . 1 `uc 1 URSTIF 1 0 :1:0 
+`uc 1 UERRIF 1 0 :1:1 
+`uc 1 ACTVIF 1 0 :1:2 
+`uc 1 TRNIF 1 0 :1:3 
+`uc 1 IDLEIF 1 0 :1:4 
+`uc 1 STALLIF 1 0 :1:5 
+`uc 1 SOFIF 1 0 :1:6 
+]
+"391
+[u S762 . 1 `S754 1 . 1 0 ]
+[v _UIRbits UIRbits `VES762  1 e 1 @3944 ]
+"431
+[v _UIE UIE `VEuc  1 e 1 @3945 ]
+[s S790 . 1 `uc 1 URSTIE 1 0 :1:0 
+`uc 1 UERRIE 1 0 :1:1 
+`uc 1 ACTVIE 1 0 :1:2 
+`uc 1 TRNIE 1 0 :1:3 
+`uc 1 IDLEIE 1 0 :1:4 
+`uc 1 STALLIE 1 0 :1:5 
+`uc 1 SOFIE 1 0 :1:6 
+]
+"447
+[u S798 . 1 `S790 1 . 1 0 ]
+[v _UIEbits UIEbits `VES798  1 e 1 @3945 ]
+"487
+[v _UEIR UEIR `VEuc  1 e 1 @3946 ]
+"538
+[v _UEIE UEIE `VEuc  1 e 1 @3947 ]
+"589
+[v _USTAT USTAT `VEuc  1 e 1 @3948 ]
+"649
+[v _UCON UCON `VEuc  1 e 1 @3949 ]
+[s S138 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"665
+[u S146 . 1 `S138 1 . 1 0 ]
+[v _UCONbits UCONbits `VES146  1 e 1 @3949 ]
+"700
+[v _UADDR UADDR `VEuc  1 e 1 @3950 ]
+"764
+[v _UCFG UCFG `VEuc  1 e 1 @3951 ]
+"843
+[v _UEP0 UEP0 `VEuc  1 e 1 @3952 ]
+[s S928 . 1 `uc 1 EPSTALL 1 0 :1:0 
+`uc 1 EPINEN 1 0 :1:1 
+`uc 1 EPOUTEN 1 0 :1:2 
+`uc 1 EPCONDIS 1 0 :1:3 
+`uc 1 EPHSHK 1 0 :1:4 
+]
+"871
+[s S934 . 1 `uc 1 EP0STALL 1 0 :1:0 
+`uc 1 EP0INEN 1 0 :1:1 
+`uc 1 EP0OUTEN 1 0 :1:2 
+`uc 1 EP0CONDIS 1 0 :1:3 
+`uc 1 EP0HSHK 1 0 :1:4 
+]
+[s S940 . 1 `uc 1 EPSTALL0 1 0 :1:0 
+`uc 1 EPINEN0 1 0 :1:1 
+`uc 1 EPOUTEN0 1 0 :1:2 
+`uc 1 EPCONDIS0 1 0 :1:3 
+`uc 1 EPHSHK0 1 0 :1:4 
+]
+[u S946 . 1 `S928 1 . 1 0 `S934 1 . 1 0 `S940 1 . 1 0 ]
+[v _UEP0bits UEP0bits `VES946  1 e 1 @3952 ]
+"951
+[v _UEP1 UEP1 `VEuc  1 e 1 @3953 ]
+"2454
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"3074
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+[s S30 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3101
+[s S39 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S48 . 1 `S30 1 . 1 0 `S39 1 . 1 0 ]
+[v _LATBbits LATBbits `VES48  1 e 1 @3978 ]
+"3626
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S700 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 TMR3IE 1 0 :1:1 
+`uc 1 HLVDIE 1 0 :1:2 
+`uc 1 BCLIE 1 0 :1:3 
+`uc 1 EEIE 1 0 :1:4 
+`uc 1 USBIE 1 0 :1:5 
+`uc 1 CMIE 1 0 :1:6 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"4658
+[s S709 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIE 1 0 :1:2 
+]
+[u S712 . 1 `S700 1 . 1 0 `S709 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES712  1 e 1 @4000 ]
+[s S409 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 USBIF 1 0 :1:5 
+`uc 1 CMIF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"4729
+[s S418 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+]
+[u S421 . 1 `S409 1 . 1 0 `S418 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES421  1 e 1 @4001 ]
+"4850
+[v _EECON1 EECON1 `VEuc  1 e 1 @4006 ]
+[s S328 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"4871
+[s S337 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S340 . 1 `S328 1 . 1 0 `S337 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES340  1 e 1 @4006 ]
+"4916
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"8070
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"8147
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"8154
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S75 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8615
+[s S84 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S93 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S97 . 1 `S75 1 . 1 0 `S84 1 . 1 0 `S93 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES97  1 e 1 @4082 ]
+"8721
+[v _TABLAT TABLAT `VEuc  1 e 1 @4085 ]
+"8729
+[v _TBLPTR TBLPTR `VEum  1 e 3 @4086 ]
+"8737
+[v _TBLPTRL TBLPTRL `VEuc  1 e 1 @4086 ]
+"8744
+[v _TBLPTRH TBLPTRH `VEuc  1 e 1 @4087 ]
+"8751
+[v _TBLPTRU TBLPTRU `VEuc  1 e 1 @4088 ]
+"3 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+[v _HID_RT_sel HID_RT_sel `uc  1 e 1 @2 ]
+"51 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.h
+[v _ReceivedDataBuffer ReceivedDataBuffer `[0]uc  1 e 0 @1280 ]
+"52
+[v _ToSendDataBuffer ToSendDataBuffer `[0]uc  1 e 0 @1344 ]
+"59
+[v _USBOutHandle USBOutHandle `*.39VEv  1 e 2 0 ]
+"60
+[v _USBInHandle USBInHandle `*.39VEv  1 e 2 0 ]
+"65
+[v _SYS_state SYS_state `uc  1 e 1 @0 ]
+"66
+[v _PT0_BOOT PT0_BOOT `uc  1 e 1 @1 ]
+[s S894 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `ui 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `ui 1 idVendor 2 8 `ui 1 idProduct 2 10 `ui 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
+"14 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_descriptors.c
+[v _device_dsc device_dsc `CS894  1 e 18 0 ]
+"33
+[v _configDescriptor1 configDescriptor1 `C[41]uc  1 e 41 0 ]
+[s S2060 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]ui 1 string 2 2 ]
+"82
+[v _sd000 sd000 `CS2060  1 e 4 0 ]
+[s S2064 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]ui 1 string 50 2 ]
+"87
+[v _sd001 sd001 `CS2064  1 e 52 0 ]
+[s S2068 . 46 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[22]ui 1 string 44 2 ]
+"92
+[v _sd002 sd002 `CS2068  1 e 46 0 ]
+[s S2072 . 29 `[29]uc 1 report 29 0 ]
+"97
+[v _hid_rpt01 hid_rpt01 `CS2072  1 e 29 0 ]
+"117
+[v _USB_CD_Ptr USB_CD_Ptr `C[1]*.31Cuc  1 e 1 0 ]
+"123
+[v _USB_SD_Ptr USB_SD_Ptr `C[3]*.31Cuc  1 e 3 0 ]
+"141 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+[v _USBDeviceState USBDeviceState `E3311  1 e 1 0 ]
+"142
+[v _USBActiveConfiguration USBActiveConfiguration `uc  1 e 1 0 ]
+"143
+[v _USBAlternateInterface USBAlternateInterface `[1]uc  1 e 1 0 ]
+[s S489 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"144
+[s S498 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S505 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S509 _BD_STAT 1 `uc 1 Val 1 0 `S489 1 . 1 0 `S498 1 . 1 0 `S505 1 . 1 0 ]
+[s S514 . 4 `S509 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S519 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S523 __BDT 4 `S514 1 . 4 0 `S519 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v _pBDTEntryEP0OutCurrent pBDTEntryEP0OutCurrent `*.39VES523  1 e 2 0 ]
+"145
+[v _pBDTEntryEP0OutNext pBDTEntryEP0OutNext `*.39VES523  1 e 2 0 ]
+"146
+[v _pBDTEntryOut pBDTEntryOut `[2]*.39VES523  1 e 4 0 ]
+"147
+[v _pBDTEntryIn pBDTEntryIn `[2]*.39VES523  1 e 4 0 ]
+"148
+[v _shortPacketStatus shortPacketStatus `uc  1 e 1 0 ]
+"149
+[v _controlTransferState controlTransferState `uc  1 e 1 0 ]
+[u S528 . 3 `*.2uc 1 bRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2ui 1 wRam 3 0 `*.2Cui 1 wRom 3 0 ]
+"150
+[s S533 . 1 `uc 1 ctrl_trf_mem 1 0 :1:0 
+`uc 1 reserved 1 0 :5:1 
+`uc 1 includeZero 1 0 :1:6 
+`uc 1 busy 1 0 :1:7 
+]
+[u S538 . 1 `S533 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S541 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[u S544 . 2 `ui 1 Val 2 0 `[2]uc 1 v 2 0 `S541 1 byte 2 0 ]
+[s S548 . 6 `S528 1 pSrc 3 0 `S538 1 info 1 3 `S544 1 wCount 2 4 ]
+[v _inPipes inPipes `[1]S548  1 e 6 0 ]
+[u S552 . 3 `*.2uc 1 bRam 3 0 `*.2ui 1 wRam 3 0 ]
+"151
+[s S555 . 1 `uc 1 reserved 1 0 :7:0 
+`uc 1 busy 1 0 :1:7 
+]
+[u S558 . 1 `S555 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S562 . 8 `S552 1 pDst 3 0 `S558 1 info 1 3 `S544 1 wCount 2 4 `*.37(v 1 pFunc 2 6 ]
+[v _outPipes outPipes `[1]S562  1 e 8 0 ]
+"152
+[v _pDst pDst `*.39uc  1 e 2 0 ]
+"153
+[v _RemoteWakeup RemoteWakeup `uc  1 e 1 0 ]
+"154
+[v _USBBusIsSuspended USBBusIsSuspended `uc  1 e 1 0 ]
+[s S567 . 1 `uc 1 filler1 1 0 :1:0 
+`uc 1 ping_pong 1 0 :1:1 
+`uc 1 direction 1 0 :1:2 
+`uc 1 endpoint_number 1 0 :4:3 
+]
+"155
+[u S572 __USTAT 1 `S567 1 . 1 0 `uc 1 Val 1 0 ]
+[v _USTATcopy USTATcopy `S572  1 e 1 0 ]
+"156
+[v _endpoint_number endpoint_number `uc  1 e 1 0 ]
+"157
+[v _BothEP0OutUOWNsSet BothEP0OutUOWNsSet `uc  1 e 1 0 ]
+[s S575 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"158
+[u S578 . 1 `S575 1 bits 1 0 `uc 1 Val 1 0 ]
+[v _ep_data_in ep_data_in `[2]S578  1 e 2 0 ]
+"159
+[v _ep_data_out ep_data_out `[2]S578  1 e 2 0 ]
+"160
+[v _USBStatusStageTimeoutCounter USBStatusStageTimeoutCounter `uc  1 e 1 0 ]
+"161
+[v _USBDeferStatusStagePacket USBDeferStatusStagePacket `VEuc  1 e 1 0 ]
+"162
+[v _USBStatusStageEnabledFlag1 USBStatusStageEnabledFlag1 `VEuc  1 e 1 0 ]
+"163
+[v _USBStatusStageEnabledFlag2 USBStatusStageEnabledFlag2 `VEuc  1 e 1 0 ]
+"164
+[v _USBDeferINDataStagePackets USBDeferINDataStagePackets `VEuc  1 e 1 0 ]
+"165
+[v _USBDeferOUTDataStagePackets USBDeferOUTDataStagePackets `VEuc  1 e 1 0 ]
+"166
+[v _USB1msTickCount USB1msTickCount `ul  1 e 4 0 ]
+"167
+[v _USBTicksSinceSuspendEnd USBTicksSinceSuspendEnd `uc  1 e 1 0 ]
+"174
+[v _BDT BDT `VE[8]S523  1 e 32 @1024 ]
+[s S581 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `ui 1 wValue 2 2 `ui 1 wIndex 2 4 `ui 1 wLength 2 6 ]
+"179
+[s S608 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`S544 1 W_Value 2 2 `S544 1 W_Index 2 4 `S544 1 W_Length 2 6 ]
+[s S614 . 8 `uc 1 Recipient 1 0 :5:0 
+`uc 1 RequestType 1 0 :2:5 
+`uc 1 DataDir 1 0 :1:7 
+`uc 1 . 1 1 :8:0 
+`uc 1 bFeature 1 2 `uc 1 . 1 3 :8:0 
+`uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S625 . 1 `uc 1 recipient 1 0 :5:0 
+`uc 1 type 1 0 :2:5 
+`uc 1 direction 1 0 :1:7 
+]
+[u S629 . 1 `uc 1 bmRequestType 1 0 `S625 1 . 1 0 ]
+[s S632 . 1 `S629 1 requestInfo 1 0 ]
+[s S634 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDscIndex 1 2 `uc 1 bDescriptorType 1 3 `ui 1 wLangID 2 4 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S642 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDevADR 1 2 `uc 1 bDevADRH 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S651 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bConfigurationValue 1 2 `uc 1 bCfgRSD 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S660 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bAltID 1 2 `uc 1 bAltID_H 1 3 `uc 1 bIntfID 1 4 `uc 1 bIntfID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S669 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 bEPID 1 4 `uc 1 bEPID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S678 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 EPNum 1 4 :4:0 
+`uc 1 . 1 4 :3:4 
+`uc 1 EPDir 1 4 :1:7 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[u S689 . 8 `S581 1 . 8 0 `S608 1 . 8 0 `S614 1 . 8 0 `S632 1 . 1 0 `S634 1 . 8 0 `S642 1 . 8 0 `S651 1 . 8 0 `S660 1 . 8 0 `S669 1 . 8 0 `S678 1 . 8 0 ]
+[v _SetupPkt SetupPkt `VES689  1 e 8 @1056 ]
+"180
+[v _CtrlTrfData CtrlTrfData `VE[8]uc  1 e 8 @1064 ]
+"87 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+[v _idle_rate idle_rate `uc  1 s 1 idle_rate ]
+"88
+[v _active_protocol active_protocol `uc  1 s 1 active_protocol ]
+"63 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"98
+} 0
+"100
+[v _init_APP init_APP `(v  1 e 1 0 ]
+{
+"110
+} 0
+"36 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+[v _TMR0_1S_config TMR0_1S_config `(v  1 e 1 0 ]
+{
+"42
+} 0
+"112 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+[v _boot boot `T(v  1 e 1 0 ]
+{
+"149
+} 0
+"65 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+[v _erase_falsh erase_falsh `(v  1 e 1 0 ]
+{
+"68
+[v erase_falsh@t_save t_save `[4]uc  1 a 4 0 ]
+"67
+[v erase_falsh@i i `ui  1 a 2 4 ]
+[v erase_falsh@F3710 F3710 `[4]uc  1 s 4 F3710 ]
+"112
+} 0
+"151 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+[v _Write_event Write_event `T(v  1 e 1 0 ]
+{
+"153
+[v Write_event@i i `uc  1 a 1 33 ]
+"190
+} 0
+"3 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+[v _flash_write_B32 flash_write_B32 `(uc  1 e 1 0 ]
+{
+"6
+[v flash_write_B32@addr addr `ui  1 a 2 5 ]
+"5
+[v flash_write_B32@i i `uc  1 a 1 7 ]
+"42
+} 0
+"192 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\main.c
+[v _Read_event Read_event `T(v  1 e 1 0 ]
+{
+"226
+} 0
+"44 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+[v _response_event response_event `T(v  1 e 1 0 ]
+{
+[v response_event@c0 c0 `uc  1 a 1 wreg ]
+[v response_event@c0 c0 `uc  1 a 1 wreg ]
+[v response_event@c1 c1 `uc  1 p 1 30 ]
+"46
+[v response_event@c0 c0 `uc  1 a 1 31 ]
+"49
+} 0
+"5
+[v _HID_tx HID_tx `T(v  1 e 1 0 ]
+{
+"10
+} 0
+"114 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/memory.c
+[v _flash_read_byte flash_read_byte `(v  1 e 1 0 ]
+{
+"116
+[v flash_read_byte@i i `uc  1 a 1 5 ]
+"127
+} 0
+"11 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/system.c
+[v _HID_rx HID_rx `T(v  1 e 1 0 ]
+{
+"16
+} 0
+"18
+[v _HID_transf HID_transf `(v  1 e 1 @27135 ]
+{
+"34
+} 0
+"481 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+{
+"483
+[v USBDeviceTasks@i i `uc  1 a 1 29 ]
+"831
+} 0
+"2310
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+{
+"2356
+} 0
+"2252
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+{
+"2293
+} 0
+"2209
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+{
+"2234
+} 0
+"2998
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 1 0 ]
+{
+"3016
+} 0
+"281
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+{
+"283
+[v USBDeviceInit@i i `uc  1 a 1 8 ]
+"375
+} 0
+"2379
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+{
+"2430
+} 0
+"27 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"31
+[v memcpy@s s `*.39Cuc  1 a 2 8 ]
+"30
+[v memcpy@d d `*.39uc  1 a 2 6 ]
+"32
+[v memcpy@tmp tmp `uc  1 a 1 10 ]
+"27
+[v memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v memcpy@n n `ui  1 p 2 4 ]
+"41
+} 0
+"2472 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+{
+"2522
+} 0
+"1620
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+{
+"1752
+} 0
+"1492
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+{
+"1522
+} 0
+"2693
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+{
+"2740
+} 0
+"1972
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+{
+"1974
+[v USBStdSetCfgHandler@i i `uc  1 a 1 20 ]
+"2028
+} 0
+"8 D:\DOCUMENTOS\PROGRAMAS_ESCUELA\xc8\v2.32\pic\sources\c90\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+{
+"15
+[v memset@p p `*.39uc  1 a 2 6 ]
+"8
+[v memset@p1 p1 `*.39v  1 p 2 0 ]
+[v memset@c c `i  1 p 2 2 ]
+[v memset@n n `ui  1 p 2 4 ]
+"22
+} 0
+"2133 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+{
+[s S489 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2166
+[s S498 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S505 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S509 _BD_STAT 1 `uc 1 Val 1 0 `S489 1 . 1 0 `S498 1 . 1 0 `S505 1 . 1 0 ]
+[s S514 . 4 `S509 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S519 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S523 __BDT 4 `S514 1 . 4 0 `S519 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdGetStatusHandler@p p `*.39S523  1 a 2 0 ]
+"2191
+} 0
+"2047
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+{
+"2116
+} 0
+"2761
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+{
+[s S489 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2763
+[s S498 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S505 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S509 _BD_STAT 1 `uc 1 Val 1 0 `S489 1 . 1 0 `S498 1 . 1 0 `S505 1 . 1 0 ]
+[s S514 . 4 `S509 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S519 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S523 __BDT 4 `S514 1 . 4 0 `S519 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdFeatureReqHandler@p p `*.39S523  1 a 2 25 ]
+"2768
+[v USBStdFeatureReqHandler@pUEP pUEP `*.39uc  1 a 2 22 ]
+[s S575 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"2764
+[u S578 . 1 `S575 1 bits 1 0 `uc 1 Val 1 0 ]
+[v USBStdFeatureReqHandler@current_ep_data current_ep_data `S578  1 a 1 24 ]
+"2953
+} 0
+"25 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_events.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(uc  1 e 1 0 ]
+{
+[v USER_USB_CALLBACK_EVENT_HANDLER@event event `E3252  1 p 2 12 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@pdata pdata `*.39v  1 p 2 14 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@size size `ui  1 p 2 16 ]
+"48
+} 0
+"999 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+{
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[s S489 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1001
+[s S498 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S505 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S509 _BD_STAT 1 `uc 1 Val 1 0 `S489 1 . 1 0 `S498 1 . 1 0 `S505 1 . 1 0 ]
+[s S514 . 4 `S509 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S519 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S523 __BDT 4 `S514 1 . 4 0 `S519 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBTransferOnePacket@handle handle `*.39VES523  1 a 2 7 ]
+"999
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[v USBTransferOnePacket@dir dir `uc  1 p 1 0 ]
+[v USBTransferOnePacket@data data `*.39uc  1 p 2 1 ]
+[v USBTransferOnePacket@len len `uc  1 p 1 3 ]
+"1004
+[v USBTransferOnePacket@ep ep `uc  1 a 1 6 ]
+"1051
+} 0
+"882
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+{
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+"884
+[v USBEnableEndpoint@p p `*.39uc  1 a 2 9 ]
+"882
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+[v USBEnableEndpoint@options options `uc  1 p 1 8 ]
+"888
+[v USBEnableEndpoint@ep ep `uc  1 a 1 11 ]
+"906
+} 0
+"1547
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+{
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[s S489 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1549
+[s S498 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S505 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S509 _BD_STAT 1 `uc 1 Val 1 0 `S489 1 . 1 0 `S498 1 . 1 0 `S505 1 . 1 0 ]
+[s S514 . 4 `S509 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S519 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S523 __BDT 4 `S514 1 . 4 0 `S519 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBConfigureEndpoint@handle handle `*.39VES523  1 a 2 6 ]
+"1547
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[v USBConfigureEndpoint@direction direction `uc  1 p 1 0 ]
+"1553
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 5 ]
+"1589
+} 0
+"161 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device_hid.c
+[v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 1 0 ]
+{
+"249
+} 0
+"2545 D:\DOCUMENTOS\UNIVERSIDAD\CURSOS AUTOMATICA\TESIS\Daniel\pro\firmware\firmware_3\F_VSCODE\system/usb_device.c
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+{
+"2574
+} 0
+"1856
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+{
+"1858
+[v USBCtrlTrfRxService@byteToRead byteToRead `uc  1 a 1 1 ]
+"1859
+[v USBCtrlTrfRxService@i i `uc  1 a 1 0 ]
+"1951
+} 0
+"1420
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+{
+"1463
+} 0
+"2599
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+{
+"2601
+[v USBCtrlTrfInHandler@lastDTS lastDTS `uc  1 a 1 1 ]
+"2674
+} 0
+"1775
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+{
+"1777
+[v USBCtrlTrfTxService@byteToSend byteToSend `uc  1 a 1 0 ]
+"1829
+} 0

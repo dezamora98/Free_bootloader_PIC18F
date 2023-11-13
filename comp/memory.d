@@ -1,0 +1,1 @@
+ comp/memory.d  comp/memory.p1:  system/memory.c system/usb_common.h system/memory.h system/usb_hal_pic18.h system/system.h system/usb_ch9.h system/usb_device.h system/usb_config.h system/usb_device_hid.h system/usb.h system/fuses.h system/usb_hal.h

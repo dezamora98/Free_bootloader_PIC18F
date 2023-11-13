@@ -1,0 +1,12 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "xc.h": "c",
+        "pic18.h": "c",
+        "pic.h": "c",
+        "htc.h": "c",
+        "builtins.h": "c",
+        "trace18.h": "c"
+    },
+    "C_Cpp.dimInactiveRegions": false
+}
